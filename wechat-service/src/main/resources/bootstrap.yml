@@ -1,0 +1,17 @@
+server:
+  port: 5001
+
+spring:
+  application:
+    name: wechatService
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.108.123.162:8848
+      config:
+        server-addr: 39.108.123.162:8848 #Nacos作为配置中心地址
+        file-extension: yaml #指定yaml格式的配置
+    sentinel:
+      transport:
+        dashboard: 39.108.123.162:8080
+        port: 8719
